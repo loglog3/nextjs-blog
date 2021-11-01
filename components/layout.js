@@ -4,7 +4,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = '[Your Name]'
+const name = '이승민'
 export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
@@ -60,6 +60,7 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
+      {/* 다른 곳에서 Layout을 불러서 쓸 때에는 딱 여기에 <Layout> 이 사이 것들 </Layout> 이 children에 들어가게 된다.  */}
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
